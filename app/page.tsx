@@ -1,38 +1,38 @@
-import { BookOpen, MapPin, Users, Heart } from "lucide-react";
-import Link from "next/link";
+<section className="py-20 bg-white/50 backdrop-blur-md">
+  <div className="max-w-6xl mx-auto px-4 text-center">
+    <h2 className="text-3xl font-bold text-islamic-green mb-12">Our Specialized Programs</h2>
+    <div className="grid md:grid-cols-3 gap-8">
+      
+      {/* Card 1 */}
+      <div className="group p-8 rounded-3xl border border-slate-100 bg-white hover:shadow-2xl transition-all">
+        <div className="w-16 h-16 bg-islamic-green/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-islamic-green transition-colors">
+          <BookOpen className="text-islamic-green group-hover:text-white" />
+        </div>
+        <h3 className="text-xl font-bold mb-3">Hifz Al-Quran</h3>
+        <p className="text-slate-500 text-sm mb-4">Structured memorization with daily revision circles.</p>
+        <span className="text-islamic-gold font-bold">In-Person Only</span>
+      </div>
 
-export default function Home() {
-  return (
-    <div>
-      {/* Hero */}
-      <section className="bg-islamic-green text-white py-24 px-6 text-center">
-        <h1 className="text-5xl font-bold mb-6">Traditional Quran Learning</h1>
-        <p className="text-xl text-slate-200 max-w-2xl mx-auto mb-10">
-          We teach Quran Reading, Tajweed, and Hifz through in-person classes led by qualified teachers.
-        </p>
-        <Link href="/registration" className="bg-islamic-gold text-islamic-green px-10 py-4 rounded-full font-bold text-lg hover:brightness-110 transition">
-          Enroll at the Campus
-        </Link>
-      </section>
+      {/* Card 2 */}
+      <div className="group p-8 rounded-3xl border border-slate-100 bg-white hover:shadow-2xl transition-all">
+        <div className="w-16 h-16 bg-islamic-green/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-islamic-green transition-colors">
+          <Mic2 className="text-islamic-green group-hover:text-white" />
+        </div>
+        <h3 className="text-xl font-bold mb-3">Tajweed Mastery</h3>
+        <p className="text-slate-500 text-sm mb-4">Correcting makharij and learning the rules of recitation.</p>
+        <span className="text-islamic-gold font-bold">Beginner to Advanced</span>
+      </div>
 
-      {/* Offline Focus */}
-      <section className="py-20 px-6 max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
-        <div className="bg-white p-8 rounded-2xl shadow-sm border-b-4 border-islamic-gold">
-          <Users className="text-islamic-gold mb-4" size={32} />
-          <h3 className="text-xl font-bold mb-2 text-islamic-green">Face-to-Face Guidance</h3>
-          <p className="text-slate-600 italic">Students learn directly at the campus with physical supervision.</p>
+      {/* Card 3 */}
+      <div className="group p-8 rounded-3xl border border-slate-100 bg-white hover:shadow-2xl transition-all">
+        <div className="w-16 h-16 bg-islamic-green/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-islamic-green transition-colors">
+          <Clock className="text-islamic-green group-hover:text-white" />
         </div>
-        <div className="bg-white p-8 rounded-2xl shadow-sm border-b-4 border-islamic-gold">
-          <BookOpen className="text-islamic-gold mb-4" size={32} />
-          <h3 className="text-xl font-bold mb-2 text-islamic-green">Structured Programs</h3>
-          <p className="text-slate-600">Daily Hifz circles, Tajweed revision, and Qaida sessions.</p>
-        </div>
-        <div className="bg-white p-8 rounded-2xl shadow-sm border-b-4 border-islamic-gold">
-          <MapPin className="text-islamic-gold mb-4" size={32} />
-          <h3 className="text-xl font-bold mb-2 text-islamic-green">Quiet Campus</h3>
-          <p className="text-slate-600">A spiritual environment designed specifically for focus and revision.</p>
-        </div>
-      </section>
+        <h3 className="text-xl font-bold mb-3">Evening Circles</h3>
+        <p className="text-slate-500 text-sm mb-4">Flexible timings for working professionals and school children.</p>
+        <span className="text-islamic-gold font-bold">Campus Focus</span>
+      </div>
+
     </div>
-  );
-}
+  </div>
+</section>
