@@ -1,15 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@layer base {
+  body {
+    /* A soft, high-end paper-like background */
+    background-color: #fcfdfa;
+    background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
+    background-opacity: 0.05;
+  }
 }
 
-body {
-  /* This ensures the 'Calm' background is applied everywhere */
-  background-color: #f9fbf7; 
-  color: #064e3b;
+.nav-link {
+  @apply text-islamic-green hover:text-islamic-gold font-medium transition-all duration-300;
 }
